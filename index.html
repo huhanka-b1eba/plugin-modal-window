@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <header class="header">
+                <h1 class="header__title">To-do list</h1>
+                <div class="statistic">
+                    <h2 class="statistic__more">Всего: <span class="statistic__more--current">0</span></h2>
+                    <h2 class="statistic__done">Сделано: <span class="statistic__done--current">0</span></h2>
+                </div>
+            </header>
+            <section class="actions">
+                <div class="actions__header">
+                    <div class="actions__search">
+                        <input class="actions__input" type="text" placeholder="Найти...">
+                        <button class="actions__search--button">Поиск</button>
+                    </div>
+                    <div class="actions__filter">
+                        <button>Все</button>
+                        <button>Не завершенные</button>
+                        <button>Завершенные</button>
+                    </div>
+                </div>
+                <div class="actions__body">
+                    <form class="actions__create">
+                        <input type="text" class="actions__input actions__input--create" placeholder="Покормить собаку...">
+                        <button action="#" class="actions__create--button">Создать</button>
+                    </form>
+                    <div class="actions__items">
+                        <div class="actions__item">
+                            <input class="actions__check" type="checkbox">
+                            <div class="actions__item--title">Почистить картошку</div>
+                            <div class="actions__delete">
+                                <img src="img/trash.svg" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
